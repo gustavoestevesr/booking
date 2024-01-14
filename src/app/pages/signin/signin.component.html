@@ -1,0 +1,16 @@
+<form class="login-form">
+  <h1 class="login-title">Enter with your account</h1>
+  <mat-form-field class="full-width">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+  </mat-form-field>
+  <mat-form-field class="full-width">
+    <mat-label>Password</mat-label>
+    <input type="password" matInput [formControl]="passwordFormControl" placeholder="**********">
+  </mat-form-field>
+  <div class="recover-password-container">
+    <button mat-button>Recover password</button>
+  </div>
+  <button mat-raised-button color="primary">LOGIN</button>
+  <button mat-stroked-button color="primary">REGISTER</button>
+</form>

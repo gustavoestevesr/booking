@@ -1,0 +1,26 @@
+.login-form {
+  max-width: 500px;
+  height: 100vh;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  button {
+    width: 100%;
+  }
+}
+
+.login-title {
+  color: white;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.recover-password-container {
+  text-align: right;
+}
