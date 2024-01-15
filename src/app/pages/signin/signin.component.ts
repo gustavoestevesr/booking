@@ -1,12 +1,23 @@
 import { Component } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import {
+  FormBuilder,
+  FormControl,
+  FormGroup,
+  Validators,
+} from '@angular/forms';
 
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
-  styleUrls: ['./signin.component.scss']
+  styleUrls: ['./signin.component.scss'],
 })
 export class SigninComponent {
-  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
-  passwordFormControl = new FormControl('', [Validators.required, Validators.email]);
+  form!: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
+    this.form = formBuilder.group({
+      email: new FormControl('', [Validators.required, Validators.email]),
+      password: new FormControl('', [Validators.required]),
+    });
+  }
 }
