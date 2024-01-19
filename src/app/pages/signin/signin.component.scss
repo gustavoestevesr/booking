@@ -34,9 +34,13 @@ main {
     gap: 1rem;
 
     .recover-password {
-        display: flex;
-        justify-content: end;
-        width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+
+    .login-spinner {
+      padding: 8px 0;
     }
   }
 }
